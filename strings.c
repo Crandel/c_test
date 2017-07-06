@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int main(void)
+void string_convert(void)
 {
+  printf("Hi string_convert\n");
   char name[] = "";
   float n1 = 0;
   float n2 = 0;
