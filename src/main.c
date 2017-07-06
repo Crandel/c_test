@@ -4,5 +4,6 @@
 int main(void)
 {
   printf("Run test C program!\n");
-  string_convert();
+  // string_convert();
+  ascii();
 }
