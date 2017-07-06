@@ -1,7 +1,12 @@
-CC=gcc
-CFLAGS=-I.
-SOURCES=main.c strings.c
+CC = gcc
+HEADERS = ./headers
+CFLAGS=-I$(HEADERS)
+SOURCES=$(wildcard src/*.c)
+
 EXEC=bin/run
 
-all:
+install:
 	$(CC) $(SOURCES) -o $(EXEC) $(CFLAGS)
+
+clean:
+	  $(RM) bin/*
