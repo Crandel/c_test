@@ -9,4 +9,4 @@ install:
 	$(CC) $(SOURCES) -o $(EXEC) $(CFLAGS)
 
 clean:
-	  $(RM) bin/*
+	  $(RM) $(EXEC)
