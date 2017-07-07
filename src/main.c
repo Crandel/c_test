@@ -10,4 +10,6 @@ int main(int argc, char *argv[])
   printf("\n");
   // string_convert();
   // ascii();
+  // test error codes
+  return 1;
 }
