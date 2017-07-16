@@ -8,8 +8,12 @@ int main(int argc, char *argv[])
     printf("%s ", argv[i]);
   }
   printf("\n");
-  // string_convert();
-  // ascii();
-  // test error codes
-  return 1;
+  /*
+  string_convert();
+  ascii();
+  test error codes
+  */
+  copy_some_str();
+  printf("last printf\n");
+  /* return 0; */
 }

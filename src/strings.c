@@ -8,6 +8,7 @@ void string_convert(void)
   float n2 = 0;
   puts("Enter your name");
   scanf("%s", name);
+  printf("Delay\n");
   printf("Hello, %s\n", name);
   puts("Give me first number");
   scanf("%f", &n1);
