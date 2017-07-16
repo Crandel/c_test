@@ -3,17 +3,18 @@
 #include <stdlib.h>
 
 
-void copy_some_str(void)
+char * copy_some_str(char orig[])
 {
-  char orig_str[] = "First string";
-  printf("Original -> '%s'\n", orig_str);
-  int or_len = strlen(orig_str);
+  int or_len = strlen(orig);
+  // get from system number of memory bytes for our copy string
   char *cp = malloc(sizeof(char) * (or_len + 1));
+  // if memory not enough malloc returns NULL
   if (cp != NULL){
+    // don`t forget about end of string "\0" -> '<='
     for (int i = 0; i <= or_len; i++){
-      cp[i] = orig_str[i];
+      cp[i] = orig[i];
     }
-    printf("Copy -> '%s'\n", cp);
+    return cp;
   }
-
+  return NULL;
 }
