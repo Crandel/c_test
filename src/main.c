@@ -19,8 +19,12 @@ int main(int argc, char *argv[])
   char *copy_test_str = copy_some_str(test_str);
   if (copy_test_str != NULL){
     printf("Copy -> '%s'\n", copy_test_str);
+    swap(copy_test_str, 2, 4);
+    printf("Swap -> '%s'\n", copy_test_str);
     // we need to free memory after work with copy string is done
     free(copy_test_str);
   }
+  printf("Original -> '%s'\n", test_str);
+
   /* return 0; */
 }
