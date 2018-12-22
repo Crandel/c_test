@@ -14,13 +14,13 @@ int main(int argc, char *argv[])
     printf("%s ", argv[i]);
   }
   printf("\n");
-  /*
+
+
   string_convert();
   ascii();
-  test error codes
-  */
 
-  /*
+  // test error codes
+
   char test_str[] = "some test string";
   printf("Original -> '%s'\n", test_str);
   char *copy_test_str = copy_some_str(test_str);
@@ -32,11 +32,10 @@ int main(int argc, char *argv[])
     free(copy_test_str);
   }
   printf("Original -> '%s'\n", test_str);
-  */
 
   user vasya;
   fill_user(&vasya);
   int birth_year = birthday(&vasya);
   printf("Your birth year is %i\n", birth_year);
-  /* return 0; */
+  return 0;
 }
