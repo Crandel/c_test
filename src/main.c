@@ -36,6 +36,7 @@ int main(int argc, char *argv[])
   user vasya;
   fill_user(&vasya);
   int birth_year = birthday(&vasya);
+  printf("Your name is %s\n", vasya.name);
   printf("Your birth year is %i\n", birth_year);
   return 0;
 }
